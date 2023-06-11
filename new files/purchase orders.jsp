@@ -135,7 +135,12 @@
         	  const negCell = document.createElement("td");
         	  const actionCell = document.createElement("td");
         	  nameCell.textContent = product_id;
-        	  ageCell.textContent = quantity;
+        	  const inputNegativePrice2 = document.createElement("input");
+        	  inputNegativePrice2.type = "number";
+        	  inputNegativePrice2.id = "order quantity";
+        	  inputNegativePrice2.style.width = "80px";
+        	  inputNegativePrice2.style.height = "20px";
+        	  ageCell.appendChild(inputNegativePrice2);
         	  newRow.appendChild(nameCell);
         	  newRow.appendChild(ageCell);
 
@@ -163,7 +168,7 @@
         	  table2Body.appendChild(newRow);
 
         	  // Remove the row from table1
-        	  row.parentNode.removeChild(row);
+        	  
         	}
 
 
